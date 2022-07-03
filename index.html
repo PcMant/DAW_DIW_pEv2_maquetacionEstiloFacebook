@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica bootstrap 2EV</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="libs/Bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" href="libs/bootstrap-icons/bootstrap-icons.css" />
+
+  <style>
+    .under:hover{
+      text-decoration: underline !important;
+      cursor: pointer;
+    }
+
+    .white{
+      cursor: pointer;
+    }
+
+    .white:hover{
+      background-color: rgba(255, 255, 255, 0.185);
+    }
+
+    ul{
+      list-style-type: none;
+    }
+
+    .l1{
+      height: 50px !important;
+    }
+
+    input:focus{
+      border: 1px solid white !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!--INICIO DE CABECERA-->
+  <header class="cointainer-fluid bg-secundario pt-2 pt-lg-2 pt-xl-0">
+
+    <nav class="px-3 col-12 d-flex flex-wrap align-items-center justify-content-between py-0 gap-2">
+
+      <div class="d-flex flex-row align-items-center gap-2 col-auto col-sm-auto col-md-8 col-lg-8 col-xl-2 order-0">
+        <a class="text-white" href="#"><i class="bi bi-bootstrap-fill fs-2"></i></a>
+        <div class="col-0 col-md-10 d-none d-sm-block" style="position: relative;">
+          <span class="border-0" style="position: absolute; left: 15px; top: 5px;"><i
+              class="bi bi-search text-white"></i></span>
+          <input type="text" class="form-control border-0 rounded-pill bg-terciario ps-5 text-white"
+             placeholder="Buscar" aria-label="Buscar" aria-describedby="basic-addon1">
+        </div>
+      </div>
+
+
+      <ul class="list-group list-group-horizontal  mb-2 mb-lg-0 col-xl-6 col-12 col-md-12 col-lg-12 order-md-1 order-xl-0 d-md-flex justify-content-center order-1" id="list-style: none">
+        <li
+          class="col-2 border border-5 border-top-0 border-start-0  border-end-0 mb-0 pb-0 border-bottom border-bottom-5 h-100 fs-3 border-primary d-flex justify-content-center">
+          <a class="m-0 text-primary" aria-current="page" href="#"><i class="bi bi-house"></i></a>
+        </li>
+        <li class="h-100 fs-3 col-2 white l1 d-flex justify-content-center">
+          <a class="text-white" aria-current="page" href="#"><i class="bi bi-flag"></i></a>
+        </li>
+        <li class="h-100 fs-3 col-2 white l1 d-flex justify-content-center">
+          <a class="text-white" aria-current="page" href="#"><i class="bi bi-play-btn"></i></a>
+        </li>
+        <li class="h-100 fs-3 col-2 white l1 d-flex justify-content-center">
+          <a class="text-white" aria-current="page" href="#"><i class="bi bi-shop-window"></i></a>
+        </li>
+        <li class="h-100 fs-3 white col-2 l1 d-flex justify-content-center">
+          <a class="text-white" aria-current="page" href="#"><i class="bi bi-people"></i></a>
+        </li>
+      </ul>
+
+      <div class="d-flex align-items-center col-lg-auto col-auto col-sm-auto col-md-auto order-0 gap-1">
+        <div class="rounded-pill px-3 white d-flex align-items-center">
+          <img src="imagenes/persona2.jpg" class="img-responsive text-white rounded-circle text-center mx-1"
+            style="width: 35px" />
+          <span class="text-white fs-6">Juan</span>
+        </div>
+        <a href="#" class="text-white bg-terciario rounded-circle text-center white text-decoration-none" style="width: 40px; height: 40px"><i
+            class="bi bi-chat-fill white  rounded-circle d-flex align-items-center justify-content-center" style="display: block; width: 100%; height: 100%"></i></a>
+        <a href="#" class="text-white bg-terciario rounded-circle text-center text-decoration-none" style="width: 40px; height: 40px"><i
+            class="bi bi-bell-fill white  rounded-circle d-flex align-items-center justify-content-center" style="display: block; width: 100%; height: 100%"></i></a>
+        <a href="#" class="text-white bg-terciario rounded-circle text-center text-decoration-none" style="width: 40px; height: 40px"><i
+            class="bi bi-grid-fill white  rounded-circle d-flex align-items-center justify-content-center" style="display: block; width: 100%; height: 100%"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <!--INICIO MAIN-->
+  <main class="bg-principal container-fluid pt-3" style="height: calc(100% - 50px);">
+    
+    <div class="row">
+
+      <div class="col-2 d-none d-lg-block">
+        <div class="ms-4 d-flex align-items-center white py-2">
+          <img src="imagenes/persona2.jpg"
+            class="img-responsive text-white rounded-circle text-center mx-1" style="width: 32px" />
+          <span class="text-white ms-3">Juan</span>
+        </div>
+        <div class="d-flex align-items-center ms-3 white py-2">
+          <span class="img-responsive text-white text-center mx-1 fs-4" style="width: 44px"><i
+              class="bi bi-people-fill"></i></span>
+          <span class="text-white ms-3">Amigos</span>
+        </div>
+        <div class="d-flex align-items-center ms-3 white py-2">
+          <span class="img-responsive text-white text-center mx-1 fs-4" style="width: 44px"><i
+              class="bi bi-flag-fill"></i></span>
+          <span class="text-white ms-3">Páginas</span>
+        </div>
+        <div class="d-flex align-items-center ms-3 white py-2">
+          <span class="img-responsive text-white text-center mx-1 fs-4" style="width: 44px"><i
+              class="bi bi-collection-fill"></i></span>
+          <span class="text-white ms-3">Grupos</span>
+        </div>
+        <div class="d-flex align-items-center ms-3 white py-2">
+          <span class="img-responsive text-white  text-center mx-1 fs-4" style="width: 44px"><i
+class="bi bi-bag-fill"></i></span>
+          <span class="text-white ms-3">Marketplace</span>
+        </div>
+        <div class="d-flex align-items-center ms-3 white py-2 my-0">
+          <span class="img-responsive text-white text-center mx-1 fs-4" style="width: 44px"><i
+              class="bi bi-tv-fill"></i></span>
+          <span class="text-white ms-3">Watch</span>
+        </div>
+        <div class="d-flex align-items-center ms-3 white py-2 my-0">
+          <span class="img-responsive text-white text-center mx-1 fs-4" style="width: 44px"><i
+              class="bi bi-calendar-event-fill"></i></span>
+          <span class="text-white ms-3">Eventos</span>
+        </div>
+        <p class="mt-4 ms-3" style="font-size: 1em;">
+          <a class="text-white text-decoration-none under" href="#">Privacidad</a> 
+          <a class="text-white text-decoration-none under" href="#">Condiciones</a>
+          <a class="text-white text-decoration-none under" href="#">Publicidad</a> 
+          <a class="text-white text-decoration-none under" href="#">Opciones de anuncios</a>
+          <a class="text-white text-decoration-none under" href="#">Cookies</a>
+          <a class="text-white text-decoration-none under" href="#">Más</a>
+        </p>
+      </div>
+
+      <div class="col-12 col-lg-8 d-flex flex-row justify-content-center align-items-start flex-wrap flex-grow-1">
+        <div class="col-12 col-lg-8 bg-secundario mb-3 rounded p-3" style="min-height: 150px;">
+          <div class="d-flex">
+            <img src="imagenes/persona2.jpg"
+            class="col-1 img-responsive text-white  bg-terciario rounded-circle text-center mx-1" style="width: 50px" />
+            <input placeholder="¿En qué estás pensando Juan?" class="col-10 col-md-11 py-2 px-3 border-0 rounded-pill bg-terciario text-white" type="text" />
+          </div>
+          <hr class="bg-white"/>
+          <div class="col-12 d-flex" style="height: 50px">
+            <div class="col-4 d-flex flex-row gap-2 justify-content-center align-items-center white h-100 text-white d-flex">
+              <i class="bi bi-camera-video-fill"></i> Vídeo
+            </div>
+            <div class="col-4 d-flex flex-row gap-2 justify-content-center align-items-center white h-100 text-white d-flex">
+              <i class="bi bi-images"></i> Foto
+            </div>
+            <div class="col-4 d-flex flex-row gap-2 justify-content-center align-items-center white h-100 text-white d-flex">
+              <i class="bi bi-emoji-smile-fill"></i> Sentimiento
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-12 col-lg-8 bg-secundario mb-3 rounded p-3">
+          <div class="row">
+            <div class="d-flex">
+              <img src="imagenes/persona3.jpg"
+              class="col-2 img-responsive text-white rounded-circle text-center mx-1" style="width: 50px" />
+              <div class="col-10 d-flex flex-column">
+                <a href="#" class="text-decoration-none text-white under">Stephanie Doe</a>
+                <span class="text-secondary">1hr</span>
+              </div>
+            </div>
+            <p class="text-white mt-2">Lorem ipsum dolor sit amet, consectetur</p>
+            <img src="imagenes/paisaje1.jpg" class="col-12 mt-2" />
+            
+            <div class="col-12 d-flex flex-direction-row justify-content-between mt-2">
+              <div><i class="bi bi-heart-fill text-danger"></i> <span class="text-white ms-2">60</span></div>
+              <span class="text-white under">7 comentarios</span>
+            </div>
+
+            <div class="col-12 d-flex mt-2" style="min-height: 50px;">
+              <div class="col-6 d-flex flex-row gap-2 justify-content-center align-items-center white h-100 text-white d-flex">
+                <i class="bi bi-hand-thumbs-up"></i> Me gusta
+              </div>
+              <div class="col-6 d-flex flex-row gap-2 justify-content-center align-items-center white h-100 text-white d-flex">
+                <i class="bi bi-chat-left"></i> Comentar
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-8 bg-secundario mb-3 rounded p-3">
+          <div class="row">
+            <div class="d-flex">
+              <img src="imagenes/persona4.jpg"
+              class="col-2 img-responsive text-white rounded-circle text-center mx-1" style="width: 45px" />
+              <div class="col-10 d-flex flex-column">
+                <a href="#" class="text-decoration-none text-white under">Cesar Doe</a>
+                <span class="text-secondary">1hr</span>
+              </div>
+            </div>
+            <p class="text-white mt-2">Lorem ipsum dolor sit amet, consectetur</p>
+            <img src="imagenes/paisaje2.jpg" class="col-12 mt-2" />
+            
+            <div class="col-12 d-flex flex-direction-row justify-content-between mt-2">
+              <div><i class="bi bi-heart-fill text-danger"></i> <span class="text-white ms-2">60</span></div>
+              <span class="text-white under">7 comentarios</span>
+            </div>
+
+            <div class="col-12 d-flex mt-2" style="min-height: 50px;">
+              <div class="col-6 d-flex flex-row gap-2 justify-content-center align-items-center white h-100 text-white d-flex">
+                <i class="bi bi-hand-thumbs-up"></i> Me gusta
+              </div>
+              <div class="col-6 d-flex flex-row gap-2 justify-content-center align-items-center white h-100 text-white d-flex">
+                <i class="bi bi-chat-left"></i> Comentar
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-2 d-none d-lg-block">
+        <h5 class="text-white">Publicidad</h5>
+        <img class="col-11 mb-2 rounded" src="imagenes/ad1.jpg" />
+        <img class="col-11 mb-1 rounded" src="imagenes/ad2.jpg" />
+
+        <h5 class="text-white mb-3">Contactos</h5>
+        <div class="d-flex align-items-center mb-1 white p-2">
+          <img src="imagenes/persona1.jpg"
+            class="img-responsive text-white  bg-terciario rounded-circle text-center mx-1" style="width: 32px" />
+          <span class="text-white ms-3">Alejandro Doe</span>
+        </div>
+        <div class="d-flex align-items-center mb-1 white p-2">
+          <img src="imagenes/persona3.jpg"
+            class="img-responsive text-white  bg-terciario rounded-circle text-center mx-1" style="width: 32px" />
+          <span class="text-white ms-3">Stephanie Doe</span>
+        </div>
+        <div class="d-flex align-items-center mb-1 white p-2">
+          <img src="imagenes/persona4.jpg"
+            class="img-responsive text-white  bg-terciario rounded-circle text-center mx-1" style="width: 32px" />
+          <span class="text-white ms-3">Cesar Doe</span>
+        </div>
+        <div class="d-flex align-items-center mb-1 white p-2">
+          <img src="imagenes/persona5.jpg"
+            class="img-responsive text-white  bg-terciario rounded-circle text-center mx-1" style="width: 32px" />
+          <span class="text-white ms-3">Manuel Doe</span>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--FIN MAIN-->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script type="text/javascript" src="libs/Bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
